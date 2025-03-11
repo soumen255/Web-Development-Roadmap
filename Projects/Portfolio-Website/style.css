@@ -14,9 +14,12 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url('images/backgroundFinal-removebg-preview.png');
+    background-image: url('images/back1new.jpg');
     background-size: cover;
     background-position: center;
+    /*need to learn the mask image*/
+    -webkit-mask-image: linear-gradient(to bottom, rgb(124, 107, 107)70%, rgba(0, 0, 0, 0)100%);
+    mask-image: linear-gradient(to bottom, rgb(129, 118, 118)70%, rgba(0, 0, 0, 0)100%);
 
 
 
@@ -25,4 +28,143 @@ body {
 
 .container {
     padding: 10px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #58bddb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+
+}
+
+.header-text h1 span {
+    color: #892541
+}
+
+/*---------------------about-----------------*/
+
+#about {
+    padding: 90px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font: size 60px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tab-titles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #58bddb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
 }
