@@ -126,7 +126,7 @@ nav ul li a:hover::after {
 
 .tab-titles {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -156,7 +156,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -167,4 +167,13 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
     color: #b54769;
     font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+
 }
