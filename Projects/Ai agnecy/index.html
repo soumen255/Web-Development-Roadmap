@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextGen AI Solutions - Transform your business with AI-powered services">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="NextGen AI Solutions">
+    <meta property="og:description" content="AI-powered business solutions">
+    <meta property="og:image" content="/images/og-image.webp">
+
+    <title>NextGen AI Solutions</title>
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">NextGen AI</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon"></span>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Navigation toggle">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__content container">
+                <h1 class="hero__title" data-aos="fade-up">Transform Your Business with AI</h1>
+                <p class="hero__text" data-aos="fade-up" data-aos-delay="200">Leverage cutting-edge artificial
+                    intelligence solutions</p>
+                <a href="#contact" class="btn btn--primary" data-aos="fade-up" data-aos-delay="400">Get Started</a>
+            </div>
+            <div class="hero__blob"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-up">Our AI Services</h2>
+
+                <div class="services__grid">
+                    <!-- Market Research Card -->
+                    <article class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <img src="images/market-research.svg" alt="" loading="lazy">
+                        </div>
+                        <h3>AI Market Research</h3>
+                        <p>Real-time market analysis powered by AI</p>
+                        <button class="btn btn--secondary" aria-expanded="false">Learn More</button>
+                    </article>
+
+                    <!-- AI Design Studio Card -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__icon">
+                            <img src="images/ai-design.svg" alt="" loading="lazy">
+                        </div>
+                        <h3>AI Design Studio</h3>
+                        <p>Automated design solutions with human touch</p>
+                        <button class="btn btn--secondary" aria-expanded="false">Learn More</button>
+                    </article>
+
+                    <!-- Chatbot Card -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card__icon">
+                            <img src="images/chatbot.svg" alt="" loading="lazy">
+                        </div>
+                        <h3>AI Chat Agents</h3>
+                        <p>24/7 intelligent customer support</p>
+                        <button class="btn btn--secondary" aria-expanded="false">Learn More</button>
+                    </article>
+
+                    <!-- Social SEO Card -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-card__icon">
+                            <img src="images/social-seo.svg" alt="" loading="lazy">
+                        </div>
+                        <h3>Auto Social SEO</h3>
+                        <p>AI-powered social media management</p>
+                        <button class="btn btn--secondary" aria-expanded="false">Learn More</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Interface -->
+        <div class="chatbot-wrapper">
+            <button class="chatbot-toggle" aria-label="Open chatbot">
+                <img src="images/chat-icon.svg" alt="">
+            </button>
+            <div class="chatbot-container">
+                <!-- Chatbot messages will be injected here via JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NextGen AI Solutions",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/images/logo.webp",
+        "description": "AI-powered business solutions provider",
+        "sameAs": [
+            "https://twitter.com/yourprofile",
+            "https://linkedin.com/company/yourcompany"
+        ]
+    }
+    </script>
+</body>
+
+</html>
