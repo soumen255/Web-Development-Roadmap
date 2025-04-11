@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="About Me Page" />
+    <link rel="stylesheet" href="cssPo.css" />
+    <title>About Me</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+
+        }
+
+        .box:hover {
+            width: 800px;
+            height: 800px;
+            background-color: lightblue;
+            border-radius: 10%;
+            transition-property: width, height, background-color, border-radius;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+
+</body>
+
+</html>
