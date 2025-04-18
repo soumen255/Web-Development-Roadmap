@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hfirst">Event Loop</h1>
+    <p>This is a simple example to demonstrate the event loop in JavaScript.</p>
+    <button id="myButton">Click Me!</button>
+    <p id="message"></p>
+
+    <script>
+        let button = document.getElementById('myButton');
+        let message = document.getElementById('message');
+        function buttonClickHandler() {
+            message.textContent = "Button was clicked!";
+        }
+        button.addEventListener('click', buttonClickHandler);
+        console.log("Start");
+
+        setTimeout(() => {
+            let hfirst = document.querySelector('#hfirst');
+            hfirst.textContent = " Event Open";
+            console.log("Timeout 1");
+        }, 0);
+
+        setTimeout(() => {
+            console.log("Timeout 2");
+            let para = document.createElement('p');
+            para.textContent = "This is a new paragraph added after 0ms timeout.";
+            document.body.appendChild(para);
+        }, 1000);
+
+
+
+        console.log("End");
+    </script>
+    <script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>

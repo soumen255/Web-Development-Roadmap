@@ -1,0 +1,61 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styling for paragraphs (p) */
+p {
+    font-size: 18px;
+    color: #333;
+    transition: background-color 2s ease;
+}
+
+/* Styling for h1 headings */
+h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+/* Add some styling for the #log div */
+#log {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add some margin to the #parent div for better separation */
+#parent {
+    margin-top: 20px;
+}
+
+/* Style for the individual child elements inside #parent */
+#parent p {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 2s ease;
+}
+
+/* Style for the #user span inside the span element */
+#span #user {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Add hover effect to the child elements */
+#parent p:hover {
+    background-color: #65b33c;
+    transition: background-color 2s ease;
+    cursor: pointer;
+}

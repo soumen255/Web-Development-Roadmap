@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Event Listener</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="fheader">click the buttom for verify your self</h1>
+    <button id="myButton">Click Me!</button>
+    <p id="message"></p>
+
+    <script>
+        // JavaScript code to handle the button click event
+        // example 1
+        // let button = document.getElementById('myButton');
+        // let message = document.getElementById('message');
+        // function buttonClickHandler() {
+        //     message.textContent = "Button was clchekedicked!";
+        // }
+        // button.addEventListener('mouseover', buttonClickHandler);
+        // let hdChange = prompt("Enter the header text:");
+        // let header = document.querySelector('#fheader');
+        // if (hdChange == 1) {
+        //     header.textContent = "Same as original header: " + hdChange;
+        // } else {
+        //     header.textContent = "Event and Event speaker";
+        // }
+        // example 2
+        let button = document.getElementById('myButton');
+        let header = document.querySelector('#fheader');
+        function buttonclickheader() {
+            header.textContent = "you are verified!";
+        }
+        button.addEventListener('click', buttonclickheader);
+
+
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
